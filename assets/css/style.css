@@ -4,7 +4,7 @@
 
 /* khai báo biến  */
 :root {
-    --primary-font : "Poppins";
+    --primary-font: "Poppins";
     --primay-font-02: "Sen";
 }
 /* html */
@@ -17,4 +17,378 @@ body {
     font-size: 1.6rem;
     font-family: var(--primary-font);
 }
+
+/* content box */
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    width: 144px;
+    height: 50px;
+    border-radius: 999px;
+    text-align: center;
+    background-color: #ffb900;
+}
 /* ====================================code================================= */
+.header {
+    background-color: #fffcf4;
+    padding-top: 36px;
+    padding-bottom: 65px;
+}
+.header .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-box .logo {
+    margin-right: 486px;
+}
+/* các item link */
+.nav-box .nav-link {
+    padding: 0px 18px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+}
+/* ================nav home=========== */
+.nav-link:first-of-type {
+    color: #171100;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+}
+/*==================== làm after =======================*/
+.nav-link:first-of-type::after {
+    content: "";
+    width: 12px;
+    height: 2px;
+    display: inline-block;
+    position: relative;
+    background-color: #171100;
+    bottom: -8px;
+    right: 48px;
+}
+/* ======================= btn nav=============== */
+.nav-bar .nav-btn {
+    padding: 11px 0px;
+    color: #fff;
+    background-color: #171100;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+/* ================================ HERO ============================ */
+.hero {
+    padding-bottom: 65px;
+    background-color: #fffcf4;
+}
+.hero .content-hero {
+    display: flex;
+    gap: 230px;
+}
+
+.hero .box-banner {
+    width: 51%;
+    flex: 1 0 40%;
+    position: relative;
+}
+.hero .hero-banner {
+    /*img banner*/
+    border-radius: 20px;
+    background: url(<path-to-image>) lightgray -448.75px 0px / 218.672% 100% no-repeat;
+    width: 100%;
+    height: 685px;
+    object-fit: cover;
+}
+/* ==================box nổi========================= */
+.info-card {
+    position: absolute;
+    bottom: 48px;
+    right: -100px;
+    width: 270px;
+    height: 244px;
+    padding: 28px 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.info-card .box-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.box-info .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff9e8;
+}
+
+.box-info .box-item .data {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.box-info .box-item .desc {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+}
+/* ================================================== */
+
+.hero-info {
+    margin-top: 128px;
+}
+
+.hero-info .hero-heading {
+    color: #171100;
+    font-family: var(--primay-font-02);
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.18; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.hero-info .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+}
+/*  =====================================hero cta============================= */
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 48px;
+}
+
+.hero-cta .btn-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.hero-cta span {
+    margin-left: 14px;
+    align-items: center;
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.btn-watch {
+    display: flex;
+    background-color: #fffcf4;
+    align-items: center;
+    margin-left: 28px;
+    border: none;
+}
+
+.btn-watch .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 8px 16px 0 #00000012;
+}
+
+.box-data {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+.box-data .data span {
+    margin-right: 14px;
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.22;
+}
+/* ==================== end hero============================ */
+.content-popular {
+    padding: 200px 0;
+    position: relative;
+}
+
+.content-popular .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.content-popular .desc {
+    width: 458px;
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+}
+/* ====================icon di chuyển ====================== */
+.box-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 208px;
+    right: 0;
+}
+
+.box-icon .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon-left {
+    border: 1px solid #ffb900;
+}
+.icon-left:hover {
+    cursor: pointer;
+}
+/* -------------------------------------- */
+.icon-right {
+    background: #ffb900;
+}
+.icon-right {
+    cursor: pointer;
+}
+/* ============================ courses===================== */
+.courses {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.courses .courses-box {
+    background-color: #171100;
+    width: 33.33%;
+    flex: 0 0;
+    border-radius: 12px;
+    box-shadow: 0 18px 36px 0 rgba(0, 0, 0, 0.05);
+}
+
+.courses-box .thumbnail {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+}
+
+/* ================================= info==================================== */
+.courses-box .box-info {
+    padding: 17px 22px 22px;
+}
+
+.box-info .heading {
+    color: #FFF;
+    /* color: #171100; */
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.box-info .desc {
+    margin-top: 6px;
+    width: 326px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+}
+.box-info .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .row .star span {
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* ================ cta ==================== */
+.box-cta {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-cta .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.box-cta .btn-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; 
+}
+
+
+
+
