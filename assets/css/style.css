@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+/* khai báo biến  */
+:root {
+    --primary-font : "Poppins";
+    --primay-font-02: "Sen";
+}
+/* html */
+html {
+    font-size: 62.5%;
+}
+
+/* body */
+body {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+/* ====================================code================================= */
