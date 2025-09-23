@@ -333,7 +333,7 @@ a {
 }
 
 .box-info .heading {
-    color: #FFF;
+    color: #fff;
     /* color: #171100; */
     font-size: 1.8rem;
     font-style: normal;
@@ -344,7 +344,7 @@ a {
 .box-info .desc {
     margin-top: 6px;
     width: 326px;
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 400;
@@ -356,8 +356,8 @@ a {
     justify-content: space-between;
 }
 
- .row .star span {
-    color: #FEA31B;
+.row .star span {
+    color: #fea31b;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
@@ -382,13 +382,252 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+/* ============================= end popular================================ */
+.testimonial {
+    background-color: #2e2100;
+    padding: 96px 0px;
+}
+
+.content-testimonial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-testimonial .info-student .avt {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+}
+
+.info-student .name-student {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.41;
+}
+
+.info-student .desc {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+}
+.info-student .move {
+    margin-top: 28px;
+}
+/* ===================================comment========================= */
+.comment-student {
+    position: relative;
+}
+
+.comment-student .icon {
+    position: absolute;
+    top: -25px;
+    left: -30px;
+}
+
+.comment-student .comment {
+    max-width: 740px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53; /* 153.846% */
+}
+/* ==============================cta banner============================ */
+.cta-banner {
+    padding: 200px 0;
+}
+.content-cta-banner-01 {
+    display: flex;
+    gap: 130px;
+    padding-bottom: 100px;
+}
+
+.content-cta-banner-01 .group-image {
+    display: flex;
+    gap: 30px;
+    width: 50%;
+}
+
+.content-cta-banner-01 .group-image .banner {
+    width: 100%;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.group-image .banner:first-child {
+    position: relative;
+    bottom: -20px;
+}
+/* =======================info cta content 01============================ */
+.info-cta {
+    margin-top: 65px;
+    width: 50%;
+}
+
+.info-cta .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.info-cta .desc {
+    max-width: 458px;
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.info-cta .since {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.info-cta .btn-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+/* ============================================info-cta content 02================== */
+.content-cta-banner-02 {
+    display: flex;
+    gap: 130px;
+    padding-top: 100px;
+}
+
+.content-cta-banner-02 .banner {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* ================================ ou blog========================== */
+.our-blog {
+    background-color: #fffcf4;
+    padding: 96px 0;
+}
+
+.content-our .header-our {
+    text-align: center;
+}
+
+.header-our .heading {
+    color: #130606;
+    font-family: Sen;
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.header-our .desc {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #696262;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75;
+}
+/* ========================content our========================= */
+
+.content-our .courses .courses-box {
+    background-color: #fff;
+    width: 33.33%;
+    flex: 1 0;
+}
+
+.courses-box .sub-title {
+    position: relative;
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+/*  chấm tròn đằng trc */
+.courses-box .sub-title::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: -10px;
+    background-color: #fea31b;
+}
+/* thành gạch ngang sau sub-title */
+.courses-box .sub-title::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 1px;
+    background-color: #E2DFDA;
+    position: absolute;
+    bottom: -5px;
+
+}
+
+.content-our .courses-box .heading {
+    margin-top: 20px;
+    color: #171100;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.courses-box .box-info .btn-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
     color: #FFF;
     font-size: 1.4rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 26px; 
+    line-height: 1.85;
 }
 
+.content-our .courses-box:not(:first-child) .box-info .btn-cta {
+    background-color: #130606;
+}
 
-
-
+.content-our .move {
+    margin-top: 38px;
+    text-align: center;
+}
